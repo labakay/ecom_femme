@@ -31,7 +31,7 @@
 				<div class="panel panel-primary">
 					<div class="panel-heading">Page d'Inscription</div>
 					<div class="panel-body">
-				<form method="post" action="register.php">
+				<!-- <form method="post" action="register.php">
 					<div class="row">
 						<div class="col-md-6">
 							<label for="f_name">NOM</label>
@@ -77,13 +77,38 @@
 					</div>
 					</div>
 					</div>
-					</form>
-					<div class="panel-footer"></div>
+					</form> -->
+					<div class="">
+	<form method="post" action="register.php">
+			<div class="container d-flex justify-content-center align-items-center">
+				<div class="card">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form">
+									<div class="inputbox mt-3"> <span>NOM</span> <input type="text"  id="f_name" placeholder="Nom" name="f_name" class="form-control"> </div>
+									<div class="inputbox mt-3"> <span>PRENOM</span> <input type="text"  id="l_name" placeholder="Prenom" name="l_name" class="form-control"> </div>
+									<div class="inputbox mt-3"> <span>Email</span> <input type="text" id="email" placeholder="Email" name="email" class="form-control" required> </div>
+									<div class="inputbox mt-3"> <span>Mot de passe</span> <input type="password" id="password" placeholder="mot de passe" name="password" class="form-control" required> </div>
+									<div class="inputbox mt-3"> <span>Tel</span> <input type="text" id="mobile" placeholder="+1 455 445 4532" name="mobile" class="form-control" required> </div>
+									<div class="inputbox mt-3"> <span>Adresse 1</span> <input type="text" id="address1" placeholder="addresse 1" name="address1" class="form-control" required > </div>
+									<div class="inputbox mt-3"> <span>Adresse 2</span> <input type="text" id="address2" placeholder="address 2" name="address2" class="form-control" required> </div>
+
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="text-right"> <button class="btn btn-success register btn-block">Inscription</button> </div> <a href="register.php">
+									</div>
+									<div class="form-check mt-2"> <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked> <label class="form-check-label" for="flexCheckChecked"> Mes données saisies sont exactes <a href="" class="login">Privacy & Policy</a> </label> </div>
+								</div>
+							</div>
+								<div class="col-md-2">
+									<div class="text-center mt-5"> <img src="https://i.imgur.com/98GXnDD.png" width="350"> </div>
+								</div>
+						</div>
+					</div>
 			</div>
-		</div>
-			<div class="col-md-2"></div>
+		</div>      
+    </form>
 	</div>
-	</div>
+	</div>	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 	<script src="assets/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>

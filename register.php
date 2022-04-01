@@ -77,12 +77,7 @@
 					$sql="INSERT INTO user_info (first_name, last_name, email, password, mobile, address1, address2,user_type) VALUES ('$f_name','$l_name','$email','$password','$mobile','$address1','$address2','$usertype')";
 					$run_query=mysqli_query($conn,$sql);
 					if($run_query){
-						echo "
-								<div class='alert alert-success'>
-									<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-									Click <b><a href='loginpage.php'>here</a></b> to login.
-								</div>
-						";
+						header('location:loginpage.php');
 					}
 			}
 		}

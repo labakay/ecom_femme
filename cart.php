@@ -41,9 +41,9 @@
 						<div class="col-md-2"><b>Action</b></div>
 						<div class="col-md-2"><b> Image</b></div>
 						<div class="col-md-2"><b> Nom</b></div>
-						<div class="col-md-2"><b>Prix</b></div>
+						<div class="col-md-2"><b>Prix article</b></div>
 						<div class="col-md-2"><b>Quantité</b></div>
-						<div class="col-md-2"><b>Prix en £</b></div>
+						<div class="col-md-2"><b>Prix total</b></div>
 					</div>
 					<br><br>
 					<div id='cartdetail'>
@@ -51,7 +51,7 @@
 					<div class="panel-footer">
 					</div>
 				</div>
-				<button class='btn btn-success btn-lg pull-right' id='checkout_btn' data-toggle="modal" data-target="#myModal">Checkout</button>
+				<button class='btn btn-success btn-lg pull-right' id='checkout_btn' data-toggle="modal" data-target="#myModal">valider</button>
 			</div>
 			<div class="col-md-2"></div>
 		</div>

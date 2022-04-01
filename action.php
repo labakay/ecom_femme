@@ -202,13 +202,13 @@
 		}
 		if(isset($_POST['cart_checkout']))
 		{
-			echo "
-				<div class='row'>
-					<div class='col-md-8'></div>
-					<div class='col-md-4'>
-						<b>Total: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp$$total_amt</b>
-					</div>
-				</div>";
+			// echo "
+			// 	<div class='row'>
+			// 		<div class='col-md-8'></div>
+			// 		<div class='col-md-4'>
+			// 			<b>Total: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp$total_amt</b>
+			// 		</div>
+			// 	</div>";
 		}
 	}
 }

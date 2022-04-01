@@ -31,7 +31,7 @@
 				<div class="panel panel-primary">
 					<div class="panel-heading">Enregistrer vous</div>
 					<div class="panel-body">
-				<form method="POST" action="?">
+				<!-- <form method="POST" action="?">
 					<div class="row1">
 						<div class="col-md-6">
 							<label for="email">E-mail</label>
@@ -47,8 +47,25 @@
 						<button type="submit" name="login" class="btn">Connexion</button>				
 					</div>
 					</div>
-					</div>
-				</form>
+					</div> -->
+					<div class="limit">
+    <div class="login-container">
+        <div class="bb-login">
+            <form method="POST" action="?" class="bb-form validate-form"> <span class="bb-form-title p-b-26"> Bienvenue </span> <span class="bb-form-title p-b-48"> <i class="mdi mdi-symfony"></i> </span>
+            <label for="email">E-mail</label>   
+			<div class="wrap-input100 validate-input" data-validate="Valid email is: a@b.c"> <input class="input100" type="text" name="user_email"> <span class="bbb-input" data-placeholder=""></span> </div>
+			<label for="password">Mots de passe</label>
+			<div class="wrap-input100 validate-input" data-validate="Enter password"> <span class="btn-show-pass"> <i class="mdi mdi-eye show_password"></i> </span>
+				 <input class="input100" type="password"  name="user_password"> <span class="bbb-input" data-placeholder=""></span> </div>
+              
+				 <form method="POST" action="?">
+				 <div class="login-container-form-btn">
+                    <div class="bb-login-form-btn">
+                        <div class="bb-form-bgbtn"></div> <button class="bb-form-btn" name="login" Type="submit"> Connexion </button>
+                    </div>
+                </div>
+            </form> 
+  
 <?php
 include('dbconnect.php');
 $con=mysqli_connect("localhost","root","","db3205");
