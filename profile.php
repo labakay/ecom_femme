@@ -5,34 +5,14 @@
 <!----<body> <--->
 	<?php include 'header.php' ?>
 	<br><br><br><br><br><br>
-	 <div align="center" width="20px" height="30px" class="one-time">
-	    <div><img src="assets/images/test.jpg"></div>
-	    <div><img src="assets/images/test.jpg"></div>
-	    <div><img src="assets/images/test.jpg"></div>
-		<div><img src="assets/images/test.jpg"></div>
-		<div><img src="assets/images/test.jpg"></div>
-  	</div>
+	 
 	<br>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-1"></div>
 			<div class="col-md-2">
-			<div id="get_cat"></div>
-				<!--<div class="nav nav-pills nav-stacked">
-					<li class="active"><a href="#"><h4>Categories</h4></a></li>
-					<li><a href="#">Categories</a></li>
-					<li><a href="#">Categories</a></li>
-					<li><a href="#">Categories</a></li>
-					<li><a href="#">Categories</a></li>
-				</div>-->
+			<div id="get_cat"></div>		
 				<div id="get_brand"></div>
-				<!--<div class="nav nav-pills nav-stacked">
-					<li class="active"><a href="#"><h4>Brands</h4></a></li>
-					<li><a href="#">Categories</a></li>
-					<li><a href="#">Categories</a></li>
-					<li><a href="#">Categories</a></li>
-					<li><a href="#">Categories</a></li>
-				</div>-->
 			</div>
 			<div class="col-md-8">
 				<div class="row">
@@ -49,15 +29,6 @@
 					</div>
 					<div class="panel-body">
 					<div id="get_product"></div>
-						<!--<div class="col-md-4">
-							<div class="panel panel-info">
-								<div class="panel-heading">Samsung Galaxy</div>
-								<div class="panel-body"><img src="assets/prod_images/samsung_galaxy.jpg"></div>
-								<div class="panel-heading">$500.00
-								<button class="btn btn-danger btn-xs" style="float:right;">Add to Cart</button>
-								</div>
-							</div>
-						</div>-->
 					</div>
 					<div class="panel-footer">&copy; 2022</div>
 				</div>

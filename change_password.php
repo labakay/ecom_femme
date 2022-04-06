@@ -12,8 +12,8 @@
 	<div class="navbar navbar-default navbar-fixed-top" id="topnav">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<img src="assets/images/GG.jpeg" alt="Woman"  width="50px" height="60px" />
-				<a href="profile.php" class="navbar-brand">Femme d'ynov</a>			
+			<img src="assets/images/act.jpg" alt="Woman"  width="50px" height="60px" />
+				<a href="profile.php" class="navbar-brand">Home</a>		
 			</div>
 		</div>
 	</div>
@@ -41,15 +41,13 @@
 							<label for="password">Nouveau Mots de passe</label>
 							<input type="password"  name="newpass" class="form-control" required >
 						</div>
-						<div class="col-md-6">
-							<label for="password">Nouveau Mots de passe</label>
-							<input type="password"  name="newpass" class="form-control" required >
-						</div>
+					
 					</div>
 					<br><br>
 					<div class="col-md-12">
 						<button type="submit" name="login" class="btn">Changer Mots de passe</button>				
 					</div>
+			
 					</div>
 					</div>
 					</form>
@@ -72,7 +70,7 @@
 									echo "
 										<div class='alert alert-success'>
 										<a href='#' class='close' data-dismiss='alert' aria-label='close'></a>
-										Password was changed successfuly.Click to <b><a href='loginpage.php'>re-login</a></b>
+										changement reussi !!!!Merci de vous reconnecter <b><a href='loginpage.php'>re-login</a></b>
 										</div>";										
 								}	
 								else
@@ -80,7 +78,7 @@
 									echo "
 											<div class='alert alert-success'>
 											<a href='#' class='close' data-dismiss='alert' aria-label='close'></a>
-											Old password is wrong or does not macthed new password.Click to <b><a href='change_password.php'>try again</a></b>
+											mauvais mots de passe ! <b><a href='change_password.php'>ressayern</a></b>
 											</div>";								
 								}
 							}

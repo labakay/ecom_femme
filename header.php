@@ -1,18 +1,16 @@
 <head>
 	<meta charset="utf-8">
-	<title>Woman Title</title>
-	<link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css"/>
+	<title>femme</title>
 	<link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.6-dist/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link rel="shortcut icon" href="assets/images/GG.jpeg">
+	<link rel="shortcut icon" href="assets/images/fam.jpeg">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <div class="navbar navbar-default navbar-fixed-top" id="topnav">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<img src="assets/images/GG.jpeg" alt="Woman Title"  width="50px" height="60px" />
-				<a href="index.php" class="navbar-brand">Femme d'ynov</a>
+			<a href="index.php" class="navbar-brand"><img src="assets/images/act.jpg" alt="Woman Title"  width="50px" height="60px" />
+				</a>
 			</div>
 			<ul class="nav navbar-nav">
 				<li style="width:300px;left:10px;top:10px;"><input type="text" class="form-control" id="search" name=""></li>

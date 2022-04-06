@@ -20,8 +20,8 @@
 	<div class="navbar navbar-default navbar-fixed-top" id="topnav">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<img src="assets/images/GG.jpeg" alt="Woman"  width="50px" height="60px" />
-				<a href="profile.php" class="navbar-brand">Femme d'ynov</a>		
+				<img src="assets/images/act.jpg" alt="Woman"  width="50px" height="60px" />
+				<a href="profile.php" class="navbar-brand">Home</a>		
 			</div>
 		</div>
 	</div>
@@ -46,6 +46,7 @@
 						<div class="col-md-2"><b>Prix total</b></div>
 					</div>
 					<br><br>
+
 					<div id='cartdetail'>
 					</div>
 					<div class="panel-footer">

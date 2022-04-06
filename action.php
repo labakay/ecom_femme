@@ -38,22 +38,23 @@
 				$img=$row['product_image'];
 
 				echo "<div class='col-md-4'>
-							<div class='panel panel-info'>
-								<div class='panel-heading'>$title</div>
-								<div class='panel-body'>
-								<a href='#' class='imageproduct' pid='$pro_id'>
-									<img src='assets/prod_images/$img' style='width:180px; height:200px;' >
-								</a>
-								</div>
-								<div class='panel-heading'>$$price Stock:$quantity
-								<button pid='$pro_id' class='quicklook btn btn-primary btn-xs' style='float:right;'>AGRANDIR</button>&nbsp;
-								<button pid='$pro_id' class='product btn btn-danger btn-xs' style='float:right;'> Panier</button>
-								</div>
-							</div></div>";
+				<div class='panel panel-info'>
+					<div class='panel-heading'>$title</div>
+					<div class='panel-body'>
+					<a href='#' class='imageproduct' pid='$pro_id'>
+						<img src='assets/prod_images/$img' style='width:250px; height:200px;' >
+					</a>
+					</div>
+						<div class='panel-heading'>$$price Stock:$quantity
+						<button pid='$pro_id' class='quicklook btn btn-success cart-button btn-block'><span class='dot'>1</span>Agrandir </button>&nbsp;
+						<button pid='$pro_id' class=' product btn btn-danger cart-button btn-block'><span class='dot'>1</span>Add to cart </button>
+						</div>
+					</div>
+			</div>";
 			}
 		}
 	}
-	
+
 	if(isset($_POST['get_selected_Category'])  || isset($_POST['search']))
 	{
 		if(isset($_POST['get_selected_Category']))
@@ -304,21 +305,28 @@
 		$keys=$row['product_keywords'];
 		$quantity=$row['product_quantity'];
 		echo "
-				<div class='row'>
-					<div class='col-md-6 pull-right'>
-						<img src='assets/prod_images/$image' style='width:250px;height:300px;'>
-					</div>
-					<div class='col-md-6'>
-						<div class='row'> <div class='col-md-12'><h1>$title</h1></div></div>
-						<div class='row'> <div class='col-md-12'>Price:<h3 class='text-muted'>$$price</h3></div></div>
-						<div class='row'> <div class='col-md-12'>Stock:<h3 class='text-muted'>$quantity</h3></div></div>
-						<div class='row'> <div class='col-md-12'>Description:<h4 class='text-muted'>$desc</h4></div></div><br><br>
-						<div class='row'> <div class='col-md-12'>Tags:<h4 class='text-muted'>$keys</h4></div></div>
-						<button pid='$pro_id' class='product btn btn-danger'>Add to Cart</button>
-					</div>
+		<div class='container-fluid px-sm-1 py-5 mx-auto'>
+		<div class='row justify-content-center'>
+			<div class='d-flex'><h1>$title</h1> </div>
+				<div class='card card-1'>
+						<div class='pr-3 row justify-content-end'>
+							<div class='fa fa-heart-o like'></div>
+						</div>
+					<div class='product-pic'>  <img src='assets/prod_images/$image' style='width:250px;height:300px;'>  </div>
+					<div class='product-pic'> prix: $price </div>
+					<div class='product-pic'> quantité:$quantity  </div>
+					<div class='product-pic'> description :$desc </div>
+					<div class='stars'> <span class='fa fa-star star-active'></span> <span class='fa fa-star star-active'></span> <span class='fa fa-star star-active'></span> <span class='fa fa-star-o'></span> <span class='fa fa-star-o'></span> </div>
+					
 				</div>
+			</div>
+		</div>
+	</div>
 		";
 	}
 
  ?>
+
+
+
 

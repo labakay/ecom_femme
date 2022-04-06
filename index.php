@@ -3,72 +3,37 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>master 2</title>
-	<link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css"/>
+	<title>Femme</title>
 	<link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.6-dist/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link rel="shortcut icon" href="assets/images/GG.jpeg">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body>
 	<div class="navbar navbar-default navbar-fixed-top" id="topnav">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<img src="assets/images/GG.jpeg" alt="Woman Title"  width="50px" height="60px" />
-				<a href="index.php" class="navbar-brand">Femmes DYNOV</a>
-			
+			<a href="index.php" class="navbar-brand"> <img src="assets/images/act.jpg" alt="Woman Title"  width="60px" height="60px" />
+				</a>
 			</div>
 			<ul class="nav navbar-nav">
 				<li style="width:300px;left:10px;top:10px;"><input type="text" class="form-control" id="search" name=""></li>
 				<li style="top:10px;left:20px;"><button class="btn btn-primary" id="search_btn" name=""><span class='glyphicon glyphicon-search'></span></button></li>
-			</ul> -->
-			 <ul class="nav navbar-nav navbar-right">
+			<link rel="shortcut icon" href="assets/images/fam.jpeg">
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
 				<li><a href="loginpage.php">connexion</a></li>
 					<ul class="dropdown-menu">
 					<div style="width: 300px;">
 					</div>
 				</ul>
-			
 				<li><a href="customer_registration.php">Inscription</a></li>
 			</ul>
 		</div>
 	</div>
 		<br><br><br>
-	  <div align ="center" id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-    <div class="carousel-item">
-		<img src="assets/images/test.jpg">
-    </div>
-	
+	 <div align= "center" class="one-time">
+	    <div><img src="assets/images/fem.jpg"></div>
   </div>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	<br>
 	<div class="container-fluid">
 		<div class="row">
@@ -107,7 +72,7 @@
 				    <div class="modal-content">
 				      <div class="modal-header">
 				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				        <h4 class="modal-title" id="myModalLabel">Detail ProduitS</h4>
+				        <h4 class="modal-title" id="myModalLabel">Detail Produit</h4>
 				      </div>
 				      <div class="modal-body" id='dynamic_content'>
 				        ...

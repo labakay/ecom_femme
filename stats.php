@@ -40,7 +40,6 @@
 					 $i=$i+1;
 					 } 
 					 //////////////////////
-					 //aggregate function with inner join, group and order by ... complex query 2 
 					$sql2="SELECT pid,p_name, 
 					(SUM(p_price)) AS Total 
 					FROM customer_order as co 
@@ -69,15 +68,7 @@
 					
 					 }
 
-					// products will be over soon (stock number less than 10 ) // WITH VIEW... VIEW SQL AS FOLLOWS : 
 					
-					/* CREATE VIEW stock_less_than_10 AS 
-
-				SELECT p.product_id, p.product_title , c.cat_title , p.product_price , p.product_quantity 
-				FROM products as p 
-				INNER JOIN categories as c ON p.product_cat = c.cat_id 
-				WHERE p.product_quantity<10
-*/
 					
 					 $sql3 = "SELECT * FROM stock_less_than_10 " ; 
 					 $run_query = mysqli_query($conn,$sql3);
@@ -100,7 +91,6 @@
 					 }
 					 
 					 
-					 // Procedure //
 					 
 					 $i=1;
 					 $sql3 = "CALL `getBestCategory`();" ; 
