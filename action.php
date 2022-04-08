@@ -45,14 +45,16 @@
 						<img src='assets/prod_images/$img' style='width:250px; height:200px;' >
 					</a>
 					</div>
-						<div class='panel-heading'>$$price Stock:$quantity
-						<button pid='$pro_id' class='quicklook btn btn-success cart-button btn-block'><span class='dot'>1</span>Agrandir </button>&nbsp;
-						<button pid='$pro_id' class=' product btn btn-danger cart-button btn-block'><span class='dot'>1</span>Add to cart </button>
-						</div>
+							<buttons pid='$pro_id' class='quicklook btn  cart-button btn-block'><span>Agrandir</span> <div class='liquid'></div> </buttons>
+							<buttons pid='$pro_id' class=' product btn btn-danger cart-button btn-block'><span>PANIER</span><div class='liquid'></div></buttons>
+					</div>
 					</div>
 			</div>";
 			}
 		}
+		// <button  pid='$pro_id' class='quicklook btn btn-success cart-button btn-block'><span class='dot'>1</span>Agrandir </button>&nbsp;
+		// <button pid='$pro_id' class=' product btn btn-danger cart-button btn-block'><span class='dot'>1</span>Ajouter au Panier </button>
+		
 	}
 
 	if(isset($_POST['get_selected_Category'])  || isset($_POST['search']))
@@ -80,10 +82,11 @@
 				echo "<div class='col-md-4'>
 							<div class='panel panel-info'>
 								<div class='panel-heading'>$title</div>
-								<div class='panel-body' class='imageproduct' pid='$pro_id'><img src='assets/prod_images/$img' style='width:200px; height:250px;'></div>
-								<div class='panel-heading'>$$price Stock:$quantity
-								<button pid='$pro_id' class='quicklook btn btn-warning btn-xs' style='float:right;'>Agrandir</button>&nbsp;
-								<button pid='$pro_id' class='product btn btn-danger btn-xs' style='float:right;'>Panier</button>
+								<div class='panel-body' class='imageproduct' pid='$pro_id'><img src='assets/prod_images/$img' style='width:250px; height:250px;'></div>
+							
+								<buttons pid='$pro_id' class='quicklook btn  cart-button btn-block'><span>Agrandir</span> <div class='liquid'></div> </buttons>
+
+								<buttons pid='$pro_id' class=' product btn btn-danger cart-button btn-block'><span>PANIER</span><div class='liquid'></div></buttons>
 								
 								</div>
 							</div></div>";
@@ -116,7 +119,7 @@
 				{
 					echo "<div class='alert alert-danger' role='alert'>
 						<button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button>
-						<strong></strong> Already added!
+						<strong></strong> Déja ajouté!
 					</div>";
 				}
 				else
@@ -145,7 +148,7 @@
 			{
 				echo "<div class='alert alert-danger' role='alert'>
 						<button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button>
-						<strong></strong> There is not enough in stock!
+						<strong></strong> Nous n'avons plus de stock!
 					  </div>";
 			}
 		}
@@ -312,10 +315,8 @@
 						<div class='pr-3 row justify-content-end'>
 							<div class='fa fa-heart-o like'></div>
 						</div>
-					<div class='product-pic'>  <img src='assets/prod_images/$image' style='width:250px;height:300px;'>  </div>
-					<div class='product-pic'> prix: $price </div>
-					<div class='product-pic'> quantité:$quantity  </div>
-					<div class='product-pic'> description :$desc </div>
+					<div class='product-pic'>  <img src='assets/prod_images/$image' style='width:400px;height:400px;'>  </div>
+					
 					<div class='stars'> <span class='fa fa-star star-active'></span> <span class='fa fa-star star-active'></span> <span class='fa fa-star star-active'></span> <span class='fa fa-star-o'></span> <span class='fa fa-star-o'></span> </div>
 					
 				</div>

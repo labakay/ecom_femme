@@ -3,9 +3,10 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Femme</title>
+	<title>femme</title>
 	<link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.6-dist/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="shortcut icon" href="assets/images/fam.jpeg">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body>
@@ -18,15 +19,15 @@
 			<ul class="nav navbar-nav">
 				<li style="width:300px;left:10px;top:10px;"><input type="text" class="form-control" id="search" name=""></li>
 				<li style="top:10px;left:20px;"><button class="btn btn-primary" id="search_btn" name=""><span class='glyphicon glyphicon-search'></span></button></li>
-			<link rel="shortcut icon" href="assets/images/fam.jpeg">
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="loginpage.php">connexion</a></li>
+				<br>
+				<li> <buttona> <a href="loginpage.php">connexion</a> </buttona></li>
 					<ul class="dropdown-menu">
 					<div style="width: 300px;">
 					</div>
 				</ul>
-				<li><a href="customer_registration.php">Inscription</a></li>
+				<li> <buttona> <a href="customer_registration.php">Inscription</a></buttona></li>
 			</ul>
 		</div>
 	</div>
@@ -78,7 +79,7 @@
 				        ...
 				      </div>
 				      <div class="modal-footer">
-				        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+				        <button type="buttons" class="btn btn-default" data-dismiss="modal">Fermer</button>
 				      </div>
 				    </div>
 				  </div>

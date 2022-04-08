@@ -1,11 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 4.8.2
--- https://www.phpmyadmin.net/
---
--- Anamakine: 127.0.0.1
--- Üretim Zamanı: 01 Ara 2018, 17:40:10
--- Sunucu sürümü: 10.1.34-MariaDB
--- PHP Sürümü: 7.2.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,12 +11,12 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Veritabanı: `db3205`
+-- : `db3205`
 --
 
 DELIMITER $$
 --
--- Yordamlar
+-- 
 --
 CREATE DEFINER=`root`@`localhost` PROCEDURE `GetAllcategories` ()  BEGIN
    SELECT *  FROM categories;
@@ -35,7 +27,7 @@ DELIMITER ;
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `cart`
+-- Panier
 --
 
 CREATE TABLE `cart` (
@@ -52,7 +44,7 @@ CREATE TABLE `cart` (
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `categories`
+-- `creer categorie`
 --
 
 CREATE TABLE `categories` (
@@ -61,7 +53,7 @@ CREATE TABLE `categories` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Tablo döküm verisi `categories`
+-- inserer categorie
 --
 
 INSERT INTO `categories` (`cat_id`, `cat_title`) VALUES
@@ -74,7 +66,7 @@ INSERT INTO `categories` (`cat_id`, `cat_title`) VALUES
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `customer_order`
+--  `customer_order`
 --
 
 CREATE TABLE `customer_order` (
@@ -87,7 +79,7 @@ CREATE TABLE `customer_order` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Tablo döküm verisi `customer_order`
+-- inserer `customer_order`
 --
 
 INSERT INTO `customer_order` (`id`, `uid`, `pid`, `p_name`, `p_price`, `p_qty`) VALUES
@@ -96,7 +88,7 @@ INSERT INTO `customer_order` (`id`, `uid`, `pid`, `p_name`, `p_price`, `p_qty`) 
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `products`
+--  `produits`
 --
 
 CREATE TABLE `products` (
@@ -111,7 +103,7 @@ CREATE TABLE `products` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Tablo döküm verisi `products`
+--inserer `products`
 --
 
 INSERT INTO `products` (`product_id`, `product_cat`, `product_quantity`, `product_title`, `product_price`, `product_desc`, `product_image`, `product_keywords`) VALUES
@@ -150,7 +142,7 @@ INSERT INTO `products` (`product_id`, `product_cat`, `product_quantity`, `produc
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `user_info`
+--  `user_info`
 --
 
 CREATE TABLE `user_info` (
@@ -166,7 +158,7 @@ CREATE TABLE `user_info` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Tablo döküm verisi `user_info`
+-- inserer `user_info`
 --
 
 INSERT INTO `user_info` (`user_id`, `first_name`, `last_name`, `email`, `password`, `mobile`, `address1`, `address2`, `user_type`) VALUES
@@ -178,69 +170,67 @@ INSERT INTO `user_info` (`user_id`, `first_name`, `last_name`, `email`, `passwor
 (13, 'Hılal', 'Gurel', 'hilalgurel35@gmail.com', '19981998', '5416229480', 'Balıklı mah. Hıcret sok. Osmanlı cad.', 'Kutahya-Merkez', 'User');
 
 --
--- Dökümü yapılmış tablolar için indeksler
+-- 
 --
 
 --
--- Tablo için indeksler `cart`
+-- `panier`
 --
 ALTER TABLE `cart`
   ADD PRIMARY KEY (`id`);
 
 --
--- Tablo için indeksler `categories`
+--  `categories`
 --
 ALTER TABLE `categories`
   ADD PRIMARY KEY (`cat_id`);
 
 --
--- Tablo için indeksler `customer_order`
+--  `customer_order`
 --
 ALTER TABLE `customer_order`
   ADD PRIMARY KEY (`id`);
 
 --
--- Tablo için indeksler `products`
+--  `products`
 --
 ALTER TABLE `products`
   ADD PRIMARY KEY (`product_id`);
 
 --
--- Tablo için indeksler `user_info`
+-- `user_info`
 --
 ALTER TABLE `user_info`
   ADD PRIMARY KEY (`user_id`);
 
---
--- Dökümü yapılmış tablolar için AUTO_INCREMENT değeri
---
+
 
 --
--- Tablo için AUTO_INCREMENT değeri `cart`
+--  AUTO_INCREMENT panier
 --
 ALTER TABLE `cart`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=80;
 
 --
--- Tablo için AUTO_INCREMENT değeri `categories`
+-- AUTO_INCREMENT  `categories`
 --
 ALTER TABLE `categories`
   MODIFY `cat_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
--- Tablo için AUTO_INCREMENT değeri `customer_order`
+--  `customer_order`
 --
 ALTER TABLE `customer_order`
   MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
--- Tablo için AUTO_INCREMENT değeri `products`
+-- `products`
 --
 ALTER TABLE `products`
   MODIFY `product_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
--- Tablo için AUTO_INCREMENT değeri `user_info`
+--  `user_info`
 --
 ALTER TABLE `user_info`
   MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;

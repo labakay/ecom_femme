@@ -12,8 +12,9 @@
 	<div class="navbar navbar-default navbar-fixed-top" id="topnav">
 		<div class="container-fluid">
 			<div class="navbar-header">
-			<img src="assets/images/act.jpg" alt="Woman"  width="50px" height="60px" />
-				<a href="profile.php" class="navbar-brand">Home</a>			
+			<a href="index.php" class="navbar-brand"> <img src="assets/images/act.jpg" alt="Woman Title"  width="60px" height="60px" />
+				</a>
+				
 			</div>
 		</div>
 	</div>

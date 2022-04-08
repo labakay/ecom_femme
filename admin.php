@@ -8,12 +8,12 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body>
-						<h1>BIENVENU SUR LA PAGE ADMINISTRATEUR ,
+						<h1>Admin :: 
 							<?php 				
 								session_start();
 								echo $_SESSION["f_name"]." ".$_SESSION["l_name"];
 							?>
-							<div class="text-right"> <button class="btn btn-dark"> <a href="logout.php">DECONNECTER</a></button> </div>
+							<div class="text-right"> <button class="btn btn-button btn-dark"> <a href="logout.php">DECONNECTER</a></button> </div>
 
 						</h1>						 
 						<form method="post" action="?">
@@ -52,12 +52,12 @@
 												
 						<form method="post" action="?">
 							<div class="panel panel-primary text-center">
-								<div class="panel-heading">AJOUTER CATEGORIE</div>
+								<div class="panel-heading">AJOUTER PRODUIT</div>
 								<div class="panel-body"></div>
 								<br>
 									<div class="row" >
 										<div class="col-md-2">
-											<label for="cat">Nom de CATEGORIE </label>
+											<label for="cat">Nom du produit </label>
 											<input type="text" id="cat" name="cat" class="form-control" required>
 											</div>
 
@@ -78,10 +78,7 @@
 									</div>
 
 								<div class="row">
-									<div class="col-md-2">
-										<label for="price">prix du produit</label>
-										<input type="text" id="price" name="price" class="form-control" required>
-									</div>
+								
 									<div class="col-md-2">
 										<label for="img"> Image du produit</label>
 										<input type="textarea" id="img" name="img" class="form-control" required>
